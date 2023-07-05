@@ -1,0 +1,22 @@
+              <ul class="social-links">
+                {% if site.author.facebook %}
+                <li>
+                  <a data-toggle="tooltip" title="facebook.com/morelrep" href="https://www.facebook.com/{{ site.facebook }}/" title="Facebook" class="fa fa-facebook"></a>
+                </li>
+                {% endif %}
+                {% if site.author.twitter %}
+                <li>
+                  <a data-toggle="tooltip" title="@morelrep" href="https://twitter.com/{{ site.twitter }}" title="Twitter" class="fa fa-twitter"></a>
+                </li>
+                {% endif %}
+                {% if site.author.instagram %} 
+                <li>
+                  <a data-toggle="tooltip" title="@morelrep" href="https://instagram.com/{{ site.instagram }}" title="Twitter" class="fa fa-instagram"></a>
+                </li>
+                {% endif %}
+                {% if site.linkedin %}
+                <li>
+                  <a data-toggle="tooltip" title="Twitter en construcción" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" title="LinkedIn" class="fa fa-linkedin"></a>
+                </li>
+                {% endif %}
+              </ul>

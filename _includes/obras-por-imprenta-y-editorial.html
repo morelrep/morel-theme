@@ -1,0 +1,23 @@
+{% assign site_publishers = "" | split: ',' %}
+{% for book in site.data.books %}
+    {% assign site_publishers = site_publishers | push: book.Publisher %}
+{% endfor %}
+<div class="row">
+
+            {% for publisher in site.publishers %}
+            {% if site_publishers contains publisher.title %}
+            <div class="basis obras-ciudad">
+                    <div class="container">
+                        <h2><a class="morel" href="{{ BASE_PATH }}{{ publisher.url }}">{{ publisher.title }}</a></h2>
+                    </div>
+                    {% for book in site.data.books %}
+                    {% if book.Publisher == publisher.title %}
+                    <div class="price">
+                      <div class="title"><h4><a href="{{ BASE_PATH }}{{ book.url }}">{{book.Title}}</a></h4></div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+            </div>
+            {% endif %}
+            {% endfor %}       
+</div>

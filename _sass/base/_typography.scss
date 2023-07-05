@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:300,400,700|Kanit:400,500,600,700);
+
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1226px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1227px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: var(--color-1);
+}
+
+.blog-post a,
+a.morel,
+footer a {
+  color: var(--color-1);
+  font-weight: 500;
+  transition: all 1s ease;
+}
+
+.ficha-metadata a {
+  color: var(--color-1);
+  font-weight: 700;
+  transition: all 1s ease;
+}
+
+a.metadata-input,
+footer a {
+  color: var(--color-1);
+  transition: all 1s ease;
+  text-decoration: none;
+}
+
+a.morel:hover,
+a.metadata-input:hover,
+footer a:hover {
+  color: var(--color-2);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: var(--color-1);
+}
+
+.blog-post a,
+a.morel,
+footer a {
+  color: var(--color-1);
+  font-weight: 500;
+  transition: all 1s ease;
+}
+
+.ficha-metadata a {
+  color: var(--color-1);
+  font-weight: 700;
+  transition: all 1s ease;
+}
+
+a.metadata-input,
+footer a {
+  color: var(--color-1);
+  transition: all 1s ease;
+  text-decoration: none;
+}
+
+a.morel:hover,
+a.metadata-input:hover,
+footer a:hover {
+  color: var(--color-2);
+  cursor: pointer;
+}
+
+/* branding words*/
+
+
+b.morel-word {
+  font-weight: 700;
+  font-transform: uppercase;
+  font-size: 1.25em;
+  display: inline-block;
+}
+
+b.morel-word::first-letter {
+  color: var(--color-2) !important;
+  font-weight: 700 !important;
+}
+
+b.site-word {
+  font-size: 1.20em;
+}
+
+/* 2.0 overrides */
+
+h1.index {
+
+  font-size: 1.9rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 6.5rem 0px 6rem;
+  text-align: center;
+  
+  }
+  
+  h1.list {
+    visibility: hidden;
+  }
+  
+  h2.index,
+  p.index {
+  
+    margin: 1rem;
+  }
+  
+  .obras {
+    margin-bottom: 0;
+  }
+  
+  
+  .overlay-text-inside {
+   margin: 0 -1rem 1.3rem;
+  font-size: 1rem;
+  color: var(--background);
+  
+  }
+  
+  
+  .see-and-download {
+    font-size: 1.8rem;
+  margin-top: 1.3rem;
+  color: var(--background);
+  }
+  
+  .clear {
+    color: transparent;
+  }
+  
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.88);
+  }

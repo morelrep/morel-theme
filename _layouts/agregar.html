@@ -1,0 +1,39 @@
+---
+layout: default
+---
+        <h1 class="book">{{ page.title }}</h1>
+
+        <div class="obra-dia sombra">
+            <div class="ficha-container" style="">
+                <div class="ficha-title">
+                    <h2>
+                        {{ page.title }}
+                            <a class="morel a2a_dd" href="https://www.addtoany.com/share">
+                            <i class="fa fa-share-alt" style="padding: 0em 0em;">
+                                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                            </i></a><br>
+                    </h2>
+                </div>
+                <div class="ficha-extract" style="">
+                    <p class="morel">
+                        {{ content }}
+                    </p>
+                </div>
+                <div class="ficha-metadata">
+                   <a  href="https://form.jotform.com/211904785426056"><button type="">AGREGAR</button></a> 
+                </div>
+            </div>
+            <div class="portada" style="">
+                <div class="img-frame">
+                    <a href="{{ page.descarga }}" target="_blank" download><img src="{{ BASE_PATH }}/assets/img/tema/{{ page.img }}" class="responsive" alt="{{ page.title }}"></a>
+                    <div class="actions-h">
+                        <!-- AddToAny BEGIN -->
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="actions-v">
+            </div>
+        </div>
+     
+       

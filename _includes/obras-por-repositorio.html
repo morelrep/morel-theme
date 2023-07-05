@@ -1,0 +1,22 @@
+{% assign site_repositories = "" | split: ',' %}
+{% for book in site.data.books %}
+    {% assign site_repositories = site_repositories | push: book.Archive %}
+{% endfor %}
+<div class="row">
+            {% for repository in site.repositories %}
+            {% if site_repositories contains repository.title %}
+            <div class="basis obras-ciudad">
+                    <div class="container">
+                        <h2><a class="morel" href="{{ BASE_PATH }}{{ repository.url }}">{{ repository.title }}</a></h2>
+                    </div>
+                    {% for book in site.data.books %}
+                    {% if book.Archive == repository.title %}
+                    <div class="price">
+                      <div class="title"><h4><a href="{{ BASE_PATH }}{{ book.url }}">{{book.Title}}</a></h4></div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+            </div>
+            {% endif %}
+           {% endfor %}       
+</div>

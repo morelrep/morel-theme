@@ -1,0 +1,23 @@
+  <!--lista 1 -->
+        <div class="row">
+            <!--LOOP DE LISTA 1-->
+            {% assign number = site.books.size %}
+            {% assign books = site.data.books | sample: number %}
+            {% assign limit = 7 %}
+            {% assign counter = 0 %}
+            {% for book in books %}
+                {% if book.Download and counter < limit %}
+                    {% include book-list-base.html %}
+                    {% assign counter = counter | plus: 1 %}
+                {% endif %}
+            {% endfor %}
+            <div class="basis masobras">
+                <div class="container">
+                    <label for="listas"><img src="{{ BASE_PATH }}/assets/img/tema/+obras.png" class="image sombra"></label>
+                    <div>
+                        {% assign target = "downloads" %}
+                        {% include ver-mas.html %}
+                    </div>
+                </div> 
+            </div>
+        </div>

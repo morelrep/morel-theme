@@ -1,0 +1,92 @@
+.modal ul {
+    list-style-type: square;
+    list-style-image: url("img/list.svg");
+    list-style-position: inside;
+    margin-left: 5%;
+    margin-top: 2rem;
+}
+
+.checker:checked+.modal {
+    display: flex;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: baseline;
+    position: fixed;
+    top: 2.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: scroll;
+}
+
+.modal-body {
+    max-width: 97%;
+    background-color: var(--background);
+}
+
+
+.modal .ficha-extract,
+.modal .ficha-title,
+.modal .ficha-metadata {
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+}
+
+.modal .ficha-metadata {
+    line-height: initial;
+    text-align: left;
+    /*display: block;*/
+}
+
+.modal .btn-container,
+footer .btn-container {
+    margin: 1rem 0 1rem 0;
+}
+
+label.morel {
+    color: var(--color-1);
+    font-weight: 500;
+    transition: all 1s ease;
+}
+
+label.morel:hover {
+    color: var(--color-2);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 601px) {
+    .modal .ficha-metadata {
+        display: flex;
+    }
+
+    .modal .btn-container {
+        flex-basis: 33%;
+        padding: 0px 2% 0px 2%;
+    }
+}
+
+@media screen and (min-width: 375px) {
+
+    .modal .ficha-extract,
+    .modal .ficha-title,
+    .modal .ficha-metadata {
+        padding-right: 15.1% !important;
+        padding-left: 15.1% !important;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 798px) {
+    .modal-body {
+        max-width: 90% !important;
+    }
+}
+
+@media screen and (min-width: 799px) {
+    .modal-body {
+        max-width: 70% !important;
+    }
+}

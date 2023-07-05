@@ -1,0 +1,16 @@
+<!-- if page.author is multiple and book.author is multiple too -->
+{% assign authors_all_page = page.title | split:', ' %} <!-- convierte los autores de la page en un array -->
+    
+<div class="row obras">
+    <h2 class="index">Obras de {% for author in authors_all_page reversed %} {{ author }}
+    {% endfor %} en {{ site.title }}</h2>
+</div> <!--imprime la presentation con los autores-->
+
+<div class="row">
+{% for book in site.data.books %}
+    {% assign authors_book = book.Author | split: '; ' %} <!-- convierte los autores de los libros en arrays -->
+    {% if authors_book contains page.title %} <!-- verifica si cualquiera de los autores del array en el libro coincide con the only author on the page -->
+        {% include book-list-base.html %}
+    {% endif %}
+{% endfor %}
+</div>

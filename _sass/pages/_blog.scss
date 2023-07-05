@@ -1,0 +1,149 @@
+/* BLOG */
+
+.post-cover {
+  flex-basis: calc(100% - 0.001rem);
+  max-width: calc(100% - 0.001rem);
+  align-self: center;
+  margin-top: calc(3.5rem - 1%);
+}
+
+.workarround {
+  flex-basis: 0.001rem;
+  max-width: 0.001rem;
+  min-height: 30vh;
+}
+
+.post-container {
+  max-width: 100%;
+  padding: 1% 0% 0% 0%;
+  background: none;
+}
+
+.post-container .obra-dia {
+  max-width: 100%;
+}
+
+.post-container .obra-dia {
+  background-color: transparent;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.post-container .ficha-container {
+  background-color: var(--background);
+  flex-basis: 100%;
+  max-width: 100%;
+  min-height: 72vh;
+}
+
+.post-container .ficha-extract {
+  padding-right: 8% !important;
+  padding-top: 5.75rem !important;
+  padding-left: 8% !important;
+}
+
+.post-container .ficha-title {
+  padding-top: 8% !important;
+  padding-bottom: 8% !important;
+  padding-right: calc(8% - 0.001rem) !important;
+  padding-left: calc(8% - 0.001rem) !important;
+  align-self: center;
+}
+
+.post-container .ficha-metadata {
+  padding-right: 8% !important;
+  padding-left: 8% !important;
+}
+
+/* BLOG MEDIA QUERIES */
+
+@media screen and (min-width: 1040px) and (max-width: 1227px) {
+  .post-container .ficha-metadata {
+    padding-right: 23.1% !important;
+    padding-left: 15.1% !important;
+  }
+
+  .post-container .ficha-title {
+    padding-right: calc(23.1% - 0.001rem) !important;
+    padding-left: calc(15.1% - 0.001rem) !important;
+  }
+
+  .post-container .ficha-extract {
+    padding-right: 23.1% !important;
+    padding-left: 15.1% !important;
+    padding-top: 5.75rem !important;
+  }
+}
+
+
+@media screen and (min-width: 799px) {
+  .post-container .ficha-metadata {
+    padding-right: 15.1% !important;
+    padding-left: 15.1% !important;
+  }
+
+  .post-container .ficha-title {
+    padding-right: calc(15.1% - 0.001rem) !important;
+    padding-left: calc(15.1% - 0.001rem) !important;
+  }
+
+  .post-container .ficha-extract {
+    padding-right: 15.1% !important;
+    padding-left: 15.1% !important;
+    padding-top: 5.75rem !important;
+  }
+}
+
+@media screen and (min-width: 1228px) {
+  .post-container .ficha-container {
+    flex-basis: 61%;
+    max-width: 61%;
+    min-height: 100vh;
+  }
+
+  .post-cover {
+    flex-basis: 39%;
+    max-width: 39%;
+    min-height: auto;
+    position: fixed;
+    top: 36%;
+  }
+
+  .workarround {
+    flex-basis: 39%;
+    max-width: 39%;
+    min-height: auto;
+  }
+}
+
+/* 2.0 overrides */
+
+.post-cover h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  text-transform: none;
+  text-align: left;
+
+}
+
+.podcast-tagline {
+  font-size: 1rem;
+  font-weight: 410;
+  margin-top: 1rem;
+  line-height: 1.5;
+  padding-right: 2.5rem;
+}
+
+.blog h2 {
+  font-size: 1.688rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 3.5rem 0px 1rem;
+  text-align: center;
+}
+
+
+.obras-ciudad {
+  padding: 3rem;
+}

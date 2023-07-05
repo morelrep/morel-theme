@@ -1,0 +1,27 @@
+<div class="obra-dia sombra">
+            <div class="ficha-container" style="">
+                <div class="ficha-title">
+                    <h2>
+                        About {{ site.title}}
+                    </h2>
+                </div>
+                <div class="ficha-extract" style="">
+                    {% for about in site.abouts | where: "title", "description" %}
+                    {% if about.lang == "en" %}
+                    {{ about.excerpt }}
+                    {% endif %}
+                    {% endfor %}
+                    {% include ver-mas-prom.html %}
+                </div>
+                <div class="ficha-metadata">
+                </div>
+            </div>
+            <div class="avatar" style="">
+                <div class="img-frame">
+                    <img src="{{ BASE_PATH }}/assets/img/tema/{{ site.image }}" class="responsive">
+                </div>
+            </div>
+            <div class="actions-v">
+                
+            </div>
+</div>

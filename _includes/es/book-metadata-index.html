@@ -1,0 +1,18 @@
+{% for metadata in site.data.books %}
+{% if metadata.Title == book.Title %}
+  {% assign authors_all = metadata.Author | split: '; ' %}
+
+  Escrita por 
+  {% for author_raw in authors_all | limit: 3 %}
+      {% assign author_firstlast = author_raw | split: ', ' %}
+      <a href="{{BASE_PATH}}/authors/{{ author_firstlast[0] | slugify:'latin' }}-{{ author_firstlast[1] | slugify:'latin' }}" title="{{ author_firstlast | reverse | join: '' }}">{{ author_firstlast | reverse | join: " " }}</a>
+      {% unless forloop.last == true %} + {% endunless %}
+  {% endfor %}
+    //
+     Publicada en <a href="{{BASE_PATH}}/cities/{{ book.Place | slugify:'latin' }}" title="{{ book.Place }}">{{ book.Place }}</a> por <a href="{{BASE_PATH}}/publishers/{{ book.Publisher | slugify:'latin' }}" title="{{ book.Publihser }}">{{ book.Publisher }}</a>
+      en {{ book.Date }}{% if book.Edition == book.Date %}. Primera edición{% else if book.Edition != "" and book.Edition != nil %} // Publicada por primera vez en {{ book.Edition }}{% endif %} {% if book.Archive != "" and book.Archive != nil  %}//
+      Recuperada por <a href="{{BASE_PATH}}/repositories/{{ book.Archive | slugify:'latin' }}" title="{{ book.Archive }}">{{ book.Archive }}</a>{% endif %}
+{% endif %}
+{% endfor %}
+
+

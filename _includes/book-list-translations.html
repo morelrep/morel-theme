@@ -1,0 +1,17 @@
+  <!--lista 1 -->
+        <div class="row">
+            <!--LOOP DE LISTA 1-->
+            {% assign books = site.data.books | where: "Series", "tr" | sample:7  %}
+            {% for book in books %}
+            {% include book-list-base.html %}
+            {% endfor %}
+            <div class="basis masobras">
+                <div class="container">
+                    <label for="listas"><img src="{{ BASE_PATH }}/assets/img/tema/+obras.png" class="image sombra"></label>
+                    <div>
+                        {% assign target = "translations" %}
+                        {% include ver-mas.html %}
+                    </div>
+                </div> 
+            </div>
+        </div>

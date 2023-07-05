@@ -1,0 +1,15 @@
+---
+layout: page
+---
+ <h1 class="index">{{ page.title }}</h1>
+ <div class="row obras">
+            <!--LOOP DE LISTA 1-->
+            {% assign number = site.books.size %}
+            {% assign books = site.data.books | sample: number %}
+            {% for book in books %}
+            {% if book.Download == null or book.Download == "" %}
+            {% include book-list-base.html %}
+            {% endif %}
+            {% endfor %}
+            {% include book-list-seemore.html %}
+  </div>

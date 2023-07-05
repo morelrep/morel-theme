@@ -1,0 +1,17 @@
+<div class="img-frame">
+    {% for img in site.data.books %}
+     {% if img.Title == book.Title %}
+         {% include book-list-url-img_obra-suerte.html %}
+                     <a href="{{ img.Download }}" target="_blank" download><img src="{{ img-url }}" class="responsive" alt="{{ img.Title }}"></a>
+                     <div class="actions-h">
+                         <!-- AddToAny BEGIN -->
+                         {% if img.Download != "" and img.Download != nil %} 
+                         <a class="morel" href="{{ img.Download }}" target="_blank" download><i class="fa fa-file-pdf-o"></i></a>
+                         {%endif%}
+                         {% if book.Library != "" and book.Library != nil%}
+                         <a class="morel" href="{{ img.Library }}"><i class="fa fa-book"></i></a>
+                         {% endif %}
+                     </div>
+    {% endif %}
+     {% endfor %}
+ </div>

@@ -1,0 +1,22 @@
+{% assign authors_all = book.Author | split: '; ' %}
+{% include book-list-url-img.html %}
+<div class="basis">
+    <div class="container">
+       <a href = "{% include book-list-url-page.html %}"> <img src="{{ img-url }}" alt="{{ book.Title }}" class="image sombra"></a>
+        <div class="overlay">
+            <div class="text">
+                {% include book-list-metadata.html %}
+            </div>
+        </div>
+    </div>
+    <div class="price">
+        <div class="title">{{ book.Title }}<br></div>
+        <div class="autor">
+            {% for author_raw in authors_all | limit: 3 %}
+                {% assign author_firstlast = author_raw | split: ', ' %}
+                {{ author_firstlast | reverse | join: " " }}
+                {% unless forloop.last == true %} + {% endunless %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

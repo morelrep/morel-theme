@@ -1,0 +1,106 @@
+/*forms*/
+input[type=email] {
+    border: .125em solid #ccc;
+    font-size: 1.4rem;
+    transition: all 1s ease;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem; }
+  
+  input[type=email]:focus {
+    border: 0.125em solid var(--color-2); }
+  
+  input[type=submit] {
+    font-size: 1.4rem;
+    font-family: 'Kanit', "Lucida Console", Monaco, monospace;
+    color: var(--color-1);
+    background: none;
+    font-weight: 500;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0.185em;
+    border-bottom: 0.185em;
+    border-style: solid;
+    display: inline;
+    padding: 0px 0.750rem;
+    letter-spacing: -0.063rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1s ease; }
+  
+  .busqueda input[type=submit] {
+    margin-right: -1rem;
+  }
+  
+  input[type=submit]:hover {
+    font-weight: 600;
+    color: var(--background);
+    background: var(--color-2);
+    border-style: none; }
+  
+  label.input {
+    font-size: 1.4rem; }
+  
+  input[type=search], input[type=text] {
+    border-bottom: .17em solid #ccc;
+  font-size: 1.4rem;
+  transition: all 1s ease;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  border-top: none;
+  border-left: none;
+  border-right: .17em solid #ccc; }
+  
+  input[type=search]:focus {
+    border: 0.125em solid var(--color-2); }
+  
+  /*footer form*/
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    align-items: center;
+    text-align: center; }
+  
+  .footer-col {
+    line-height: 2rem;
+    flex-basis: 100%;
+    align-self: center;
+    padding: 1rem 0px; }
+  
+  .footer {
+    font-weight: 400; }
+  
+  @media screen and (min-width: 799px) {
+    .footer-col {
+      flex-basis: 33.33%; }
+  
+    .footer-row {
+      text-align: left; } }
+  /*participar panel*/
+  .participar {
+    flex-basis: 100%; }
+  
+  .participar-right {
+    padding-left: 15.1%;
+    padding-right: 15.1%; }
+  
+  .participar .ficha-extract {
+    padding-right: 15.1%; }
+  
+  .participar .ficha-title {
+    padding-right: 15.1%; }
+  
+  @media screen and (min-width: 799px) {
+    .participar {
+      flex-basis: 50%; }
+  
+    .participar-right {
+      padding-left: 0px; }
+  
+    .participar .ficha-extract {
+      padding-right: 6%; }
+  
+    .participar .ficha-title {
+      padding-right: 6%; } }

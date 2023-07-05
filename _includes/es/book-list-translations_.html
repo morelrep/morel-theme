@@ -1,0 +1,16 @@
+  <!--lista 1 -->
+        <div class="row">
+            <!--LOOP DE LISTA 1-->
+            {% assign books = site.data.books | sort: "Date" | reverse | where: "Series", "tr" %}
+            {% for book in books | limit: 7 %}
+            {% include book-list-base.html %}
+            {% endfor %}
+            <div class="basis masobras">
+                <div class="container">
+                    <label for="listas"><img src="{{ BASE_PATH }}/assets/img/tema/+obras.png" class="image sombra"></label>
+                    <div>
+                        {% include ver-mas.html %}
+                    </div>
+                </div> 
+            </div>
+        </div>

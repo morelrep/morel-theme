@@ -1,0 +1,18 @@
+<div class="row">
+
+            {% for author in site.authors %}
+            <div class="basis obras-ciudad">
+                    <div class="container">
+                        <h2><a class="morel" href="{{ site.baseurl }}{{ author.url }}">{{ author.title }}</a></h2>
+                    </div>
+                    {% for book in site.data.books %}
+                    {% assign authors_book = book.Author | split: '; ' %} <!-- convierte los autores de los libros en arrays -->
+                    {% if authors_book contains author.title %} <!-- verifica si cualquiera de los autores del array en el libro coincide con the only author on the page -->
+                        <div class="price">
+                            <div class="title"><h4><a href="{% include book-list-url-page.html %}">{{book.Title}}</a></h4></div>
+                        </div>
+                    {% endif %}
+            {% endfor %}
+            </div>
+           {% endfor %}       
+</div>

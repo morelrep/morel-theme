@@ -1,0 +1,17 @@
+<div class="img-frame">
+   {% for book in site.data.books %}
+    {% if book.Title == page.title %}
+        {% include book-list-url-img.html %}
+                    <a href="{{ book.Download }}" target="_blank" download><img src="{{ img-url }}" class="responsive" alt="{{ book.Title }}"></a>
+                    <div class="actions-h">
+                        <!-- AddToAny BEGIN -->
+                        {% if book.Download != "" and book.Download != nil %} 
+                        <a class="morel" href="{{ book.Download }}" target="_blank" download><i class="fa fa-file-pdf-o"></i></a>
+                        {%endif%}
+                        {% if book.Library != "" and book.Library != nil%}
+                        <a class="morel" href="{{ book.Library }}"><i class="fa fa-book"></i></a>
+                        {% endif %}
+                    </div>
+        {% endif %}
+    {% endfor %}
+</div>

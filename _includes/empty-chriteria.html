@@ -1,0 +1,8 @@
+{% assign site_cities = "" | split: ',' %}
+{% for book in site.data.books %}
+    {% assign site_cities = site_cities | push: book.Place %}
+{% endfor %}
+
+<div class="row">
+    {{ site_cities }}
+</div>

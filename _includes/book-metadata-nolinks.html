@@ -1,0 +1,16 @@
+{% for book in site.data.books %}
+{% if book.Title == page.title %}
+  {% assign authors_all = book.Author | split: '; ' %}
+
+  Escrita por 
+  {% for author_raw in authors_all %}
+      {% assign author_firstlast = author_raw | split: ', ' %}
+      {{ author_firstlast | reverse | join: " " }}
+      {% unless forloop.last == true %} + {% endunless %}
+  {% endfor %}
+    //
+     Publicada en {{ book.Place }} por {{ book.Publisher }}
+      en {{ book.Date }}{% if book.Edition %} // Publicada por primera vez en {{ book.Edition }}{% endif %} {% if book.Archive %}//
+      Recuperada por {{ book.Archive }}{% endif %}
+{% endif %}
+{% endfor %}

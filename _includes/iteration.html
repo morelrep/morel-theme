@@ -1,0 +1,12 @@
+
+		{% if book.title == page.title %}
+			{% for book in site.books limit:5 %}
+				<a href="{{ book.url | relative_url }}" class="post-link">
+				    <h2>{{ book.title }}</h2>
+				</a>
+				{% else %}
+  				The collection is empty.
+			{% endfor %}
+		{% endif %}  	
+		
+		

@@ -1,0 +1,6 @@
+---
+layout: default
+---
+        <h1 class="index criterios-city">obras en {{ site.title }} por {{ page.title }}</h1>
+        <p class="criterios-city" {% if page.layout == busquedas %} style="visibility: hidden;" {% endif %}>Pon el cursor sobre {% if page.title == repositorio %}el {% else %}la {% endif %}{{ page.title }} para previsualizar las obras disponibles. Haz click para explorarlas y descargarlas.</p>
+        {{ content }}

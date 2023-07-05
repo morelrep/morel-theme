@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% assign criterio = page.criterio %}
+{% assign items_grouped = site.data.books | group_by: criterio | sort: 'name' %}
+  {% for Date in items_grouped %}
+    <h3>{{Date.name}}</h3>
+    <div class="row">
+      {% for book in Date.items %}
+            {% include book-list-base.html %}
+      {% endfor %}
+    </div>
+  {% endfor %}

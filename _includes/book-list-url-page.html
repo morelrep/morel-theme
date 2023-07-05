@@ -1,0 +1,6 @@
+{% assign authors_array = book.Author | split: '; ' %}
+{% assign author_array = authors_array[0] | split:', ' %}
+{% assign author_alone = author_array[0] %}
+{% assign title_raw = book.Title | remove: "=" | remove: ":" | split: ' ' %}
+
+{{BASE_PATH}}/books/{{ title_raw[0] | slugify:"latin" }}{% if title_raw[1] %}-{{ title_raw[1] | slugify:"latin" }}{% endif %}{% if title_raw[2] %}-{{ title_raw[2] | slugify:"latin" }}{% endif %}{% if title_raw[3] %}-{{ title_raw[3] | slugify:"latin" }}{% endif %}-{{ author_alone | slugify:"latin"}}-{{ book.Date }}

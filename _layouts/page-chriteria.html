@@ -1,0 +1,7 @@
+---
+layout: default
+---
+        <h1 class="index criterios-city">books in {{ site.title }} by {{ page.title }}</h1>
+        <p class="criterios-city" {% if page.layout == busquedas %} style="visibility: hidden;" {% endif %}>Place the cursor over the {{ page.title }} to preview the available works. Click to browse and/or download them.</p>
+
+        {{ content }}

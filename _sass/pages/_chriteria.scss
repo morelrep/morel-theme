@@ -1,0 +1,46 @@
+h1.criterios-city {
+    margin: 6.5rem 0px 0rem
+  }
+  
+  p.criterios-city {
+  
+  font-size: .9rem;
+  font-weight: 100;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 3rem 0;
+  }
+  
+  /*MEDIA QUERIES FOR CRITERIOS HOVER */
+  
+  
+  p.criterios-city {
+    visibility: hidden;
+  }
+  
+  .chriteria {
+    filter: brightness(0.30);
+  }
+  
+  .busqueda {
+    text-align: center;
+  }
+  
+  div.busqueda {
+    padding: 25vh 2rem;
+  }
+  
+  @media (hover:hover) and (pointer: fine) {
+    p.criterios-city-mobile {
+      visibility: hidden;
+    } 
+  
+    p.criterios-city {
+      visibility: visible;
+    }
+  }
+  
+  .search-index {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;}

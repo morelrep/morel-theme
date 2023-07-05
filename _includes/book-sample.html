@@ -1,0 +1,31 @@
+{% assign books = site.data.books | sample:2 %}
+{% for book in books limit:1 %}
+<h1 class="book">{{ book.Title }}</h1>
+<div class="obra-dia sombra">
+<div class="ficha-container" style="">
+    <div class="ficha-title">
+        <h2>
+            {{ book.Title }}
+                <a class="morel a2a_dd" href="https://www.addtoany.com/share">
+                <i class="fa fa-share-alt" style="padding: 0em 0em;">
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+                </i></a><br>
+        </h2>
+    </div>
+    <div class="ficha-extract" style="">
+        <p class="morel">
+            {{ book.Notes }}
+        </p>
+    </div>
+    <div class="ficha-metadata">
+        {% include book-metadata-index.html %}
+    </div>
+</div>
+<div class="portada" style="">
+    {% include actions-h_obra-suerte.html %}
+</div>
+<div class="actions-v">
+ {% include actions-v_obra-suerte.html %}
+</div>
+</div>
+{% endfor %}

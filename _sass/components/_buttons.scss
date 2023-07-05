@@ -1,0 +1,71 @@
+label.button,
+button {
+  font-size: 1.4rem;
+  font-family: 'Kanit', "Lucida Console", Monaco, monospace;
+  color: var(--color-1);
+  background: none;
+  font-weight: 500;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0.185em;
+  border-bottom: 0.185em;
+  border-style: solid;
+  display: inline;
+  padding: 0px 0.750rem;
+  letter-spacing: -0.063rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+label:hover.button,
+button:hover {
+  font-weight: 600;
+  color: var(--background);
+  background: var(--color-2);
+  border-style: none;
+}
+
+small {
+  font-size: 1.4rem;
+}
+
+/* label as buttons */
+label.button,
+button {
+  font-size: 1.4rem;
+  font-family: 'Kanit', "Lucida Console", Monaco, monospace;
+  color: var(--color-1);
+  background: none;
+  font-weight: 500;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0.185em;
+  border-bottom: 0.185em;
+  border-style: solid;
+  display: inline;
+  padding: 0px 0.750rem;
+  letter-spacing: -0.063rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+label:hover.button,
+button:hover {
+  font-weight: 600;
+  color: var(--background);
+  background: var(--color-2);
+  border-style: none;
+}
+
+
+label.promotion {
+  font-size: 1.2rem;
+}
+
+.promotion {
+  text-align: right;
+  margin-bottom: -1.3rem;
+  margin-top: 1.3rem;
+}

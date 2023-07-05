@@ -1,0 +1,40 @@
+---
+layout: page
+---
+
+  <!--Ficha del autor-->
+{% if page.city-born %}
+<div class="autor-pagina sombra">
+    <div class="ficha-container">
+      <div class="ficha-title">
+        <h2>
+          {{ page.nombre }}
+          <a class="morel a2a_dd" href="https://www.addtoany.com/share">
+                            <i class="fa fa-share-alt">
+                                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                            </i></a>
+        </h2>
+      </div>
+      <div class="ficha-extract" style="">
+        <p>
+          {{ content }}
+        </p>
+      </div>
+      <div class="ficha-metadata">
+        Nació en {% for city in site.cities %}{% if city.title == page.city-born %} <a href="{{ city.url }}" class="metadata-input"> {% endif %}{% endfor %}{{ page.city-born }}</a> el <a class="metadata-input"><label for="listas">{{ page.date-born }}</label></a>.<br>
+        Falleció en <a class="metadata-input"><label for="listas">{{ page.city-death }}</label></a> el <a class="metadata-input"><label for="listas">{{ page.date-death }}</label></a>.
+      </div>
+    </div>
+    <div class="portada" style="">
+      <div class="img-frame">  
+      <img src="{{ BASE_PATH }}/img/{{ page.img }}" class="responsive">
+      </div>
+      <div class="actions-h">
+       
+      </div>      
+    </div>
+</div>
+{% endif %}        
+        <!--fin de autores-->
+        <!--Obras-->
+{% include book-list-related-author.html %}

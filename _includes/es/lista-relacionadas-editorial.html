@@ -1,0 +1,13 @@
+  <!--lista 1 -->
+        <div class="row obras">
+            <h2 class="index">Obras publicadas por {{ page.title }} en {{ site.title }}</h2>
+        </div>
+        <div class="row">
+            <!--LOOP DE LISTA 1-->
+            {% for book in site.data.books %}
+            {% if book.Publisher == page.title %}
+            {% include book-list-base.html %}
+            {% endif %}
+            {% endfor %}
+
+        </div>

@@ -1,0 +1,8 @@
+  <!--lista 1 -->
+        <div class="row">
+            <!--LOOP DE LISTA 1-->
+            {% assign books = site.data.books %}
+            {% for book in books %}
+            {% include book-list-base.html %}
+            {% endfor %}
+        </div>

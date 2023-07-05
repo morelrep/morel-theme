@@ -1,0 +1,20 @@
+  <!--lista 1 -->
+        <div class="row">
+            <!--LOOP DE LISTA 1-->
+            {% for chriteria in site.data.chriterias %}
+             <div class="basis">
+                <div class="container">
+                    <a href="{{ BASE_PATH }}/chriteria/{{ chriteria.filename }}"><img src="{{ BASE_PATH }}/assets/img/{{ chriteria.img }}" alt="{{ chriteria.title }}" class="image sombra chriteria">
+                    <div></a>
+                        <a href="{{ BASE_PATH }}/chriteria/{{ chriteria.filename }}"><div class="text">
+                                                    <p class="overlay-text-inside">{{ chriteria.title }}</p>
+                                                    <hr class=".overlay-text-inside">
+                                                        <i class="fa fa-eye see-and-download morel"></i>
+                                                </div></a>
+                    </div>
+                </div>
+            </div>
+            
+            {% endfor %}
+        
+        </div>

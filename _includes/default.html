@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/css/main.css">
+</head>
+
+<body style="background: url('{{ BASE_PATH }}/assets/img/tema/{{ site.background }}');">
+    <script>0</script>
+    {% include nav-bar.html %}
+ 
+    <!--main container and title page-->
+    <div class="main-container">
+        
+        <!-- contenido -->
+        
+        {{ content }}
+
+      
+         <!--promoción proyecto-->
+        {% include promotion.html %}
+    </div>
+       
+
+    <!--footer-->
+ 
+
+      {% include footer.html %}
+    <!-- fin del footer -->
+ 
+</body>
+</html>

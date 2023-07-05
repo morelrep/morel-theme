@@ -1,0 +1,40 @@
+  <!--lista 1 -->
+        <div class="row obras">
+            <h2 class="index">Obras de {{ page.author }} en {{ site.title }}</h2>
+        </div>
+        <div class="row">
+            <!--LOOP DE LISTA 1-->
+            {% for book in site.data.books %}
+            {% if book.author == page.author %}
+             <div class="basis">
+                <div class="container">
+                    <a href="{{ BASE_PATH }}{{ book.url }}"><img src="{{ BASE_PATH }}/img/{{ book.img }}" alt="{{ book.title }}" class="image sombra"></a>
+                    <div class="overlay">
+                        <div class="text">
+                            {% include book-list-metadata.html %}
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="title">{{ book.title }}<br></div>
+                    <div class="autor">{{ book.author }}{% if book.author2 %}, {{ book.author2 }}{% endif %}{% if book.author3 %}, {{ book.author3 }}{% endif %}</div>
+                </div>
+            </div>
+            {% elsif book.author2 == page.author %}
+            <div class="container">
+                    <a href="{{ BASE_PATH }}{{ book.url }}"><img src="{{ BASE_PATH }}/img/{{ book.img }}" alt="{{ book.title }}" class="image sombra"></a>
+                    <div class="overlay">
+                        <div class="text">
+                            {% include book-list-metadata.html %}
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="title">{{ book.title }}<br></div>
+                    <div class="autor">{{ book.author }}{% if book.author2 %}, {{ book.author2 }}{% endif %}{% if book.author3 %}, {{ book.author3 }}{% endif %}</div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+
+        </div>

@@ -1,0 +1,30 @@
+<!-- if page.author is multiple and book.author is multiple too -->
+{% assign authors_all_page = page.author | split:'; ' %} <!-- convierte los autores de la page en un array -->
+    
+<div class="row obras">
+    <h2 class="index">Books by {% for author_raw in authors_all_page | limit: 3 %}
+      {% assign author_firstlast = author_raw | split: ', ' %}
+      {{ author_firstlast | reverse | join: " " }}</a>
+      {% unless forloop.last == true %} <small>and/or</small> {% endunless %}
+    {% endfor %} in {{ site.title }}</h2>
+</div> <!--imprime la presentation con los autores-->
+
+<div class="row">
+{% if authors_all_page[1] %} <!-- verifica si la page tiene more than one author -->
+    {% for book in site.data.books %} <!-- busca entre los libros -->
+        {% assign authors_book = book.Author | split: '; ' %} <!-- convierte los autores de los libros en un array -->
+        {% if authors_book contains authors_all_page[0] or authors_book contains authors_all_page[1] %} <!-- verifica si cualquiera de los autores del array en el libro coincide con alguno de los autores del array en la page -->
+            {% include book-list-base.html %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+
+<!-- if page.author is one and book.Author is one or multiple  -->
+    {% for book in site.data.books %}
+        {% assign authors_book = book.Author | split: '; ' %} <!-- convierte los autores de los libros en arrays -->
+        {% if authors_book contains page.author %} <!-- verifica si cualquiera de los autores del array en el libro coincide con the only author on the page -->
+            {% include book-list-base.html %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+</div>

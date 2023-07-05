@@ -1,0 +1,145 @@
+    .navBar {
+      background-color: var(--background);
+      position: fixed;
+      min-width: 100%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      z-index: 100;
+    }
+
+    nav .logo {
+      background-color: transparent;
+      border-radius: 50px;
+      display: inline-block;
+      height: 1.5rem;
+      margin: 1em 0;
+    }
+
+    nav .logo img {
+      max-width: 6.250rem;
+      height: auto;
+      margin-right: 2;
+    }
+
+
+    .navBar li:first child {
+      margin-right: auto;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      /*  max-width: 1227px;*/
+      padding: 0 2%;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      width: 30%;
+    }
+
+    nav ul a {
+      color: var(--color-1);
+      text-decoration: none;
+      transition: all .5s ease;
+      display: block;
+      padding: 0px 0.25em;
+    }
+
+    nav ul a:hover {
+      color: var(--color-2);
+    }
+
+    nav div {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      width: 50%;
+    }
+
+    nav div a {
+      color: var(--color-1);
+      text-decoration: none;
+      transition: all .5s ease;
+    }
+
+    nav div a:hover {
+      color: var(--background);
+    }
+
+    nav li {
+      display: inline-block;
+      flex: 1 1 100%;
+      text-align: right;
+      font-weight: 600;
+    }
+
+    nav .menu-item {
+      flex: 1 1 100%;
+    }
+
+    nav #menu-toggle {
+      display: none;
+    }
+
+    nav .label-toggle {
+      display: none;
+    }
+
+    nav .wrapper {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /*NAV BAR MEDIA QUERRIES */
+
+    @media screen and (max-width: 912px) {
+      nav nav ul a {
+        color: var(--color-1);
+      }
+
+      nav nav ul a:hover {
+        color: var(--background);
+      }
+
+      nav ul {
+        display: block;
+        height: 0;
+        list-style-type: none;
+        opacity: 0;
+        text-align: center;
+        transition: all 1s ease;
+        width: 100%;
+        visibility: hidden;
+      }
+
+      nav li {
+        border: 0px 2px 2px 2px solid var(--color-1);
+        color: var(--color-1);
+        display: block;
+        font-size: 1.5em;
+        padding: 1em 1em;
+        background-color: var(--color-2);
+        text-align: center;
+      }
+
+      nav #menu-toggle:checked~ul {
+        opacity: 1;
+        height: .0001rem;
+        visibility: visible;
+      }
+
+      nav .label-toggle {
+        background: linear-gradient(to bottom, var(--color-1) 0%, var(--color-1) 20%, transparent 20%, transparent 40%, var(--color-1) 40%, var(--color-1) 60%, transparent 60%, transparent 80%, var(--color-1) 80%, var(--color-1) 100%);
+        cursor: pointer;
+        display: block;
+        float: right;
+        height: 1.43em;
+        margin-top: 1em;
+        width: 1.43em;
+      }
+
+      nav .wrapper {
+        display: block;
+      }
+    }

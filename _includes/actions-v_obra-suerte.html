@@ -1,0 +1,12 @@
+ {% for link in site.data.books %}
+ {% if link.Title == book.Title %}
+    {% if link.Download != "" and link.Download != nil %} 
+    <a class="morel" href="{{ link.Download }}" target="_blank" download><i class="fa fa-file-pdf-o"></i></a>
+    {%endif%}
+    {% if link.Library != "" and link.Library != nil%}
+    <br>
+    <br>
+    <a class="morel" href="{{ link.Library }}"><i class="fa fa-book"></i></a>
+    {% endif %}
+{% endif %}
+{% endfor %}

@@ -1,0 +1,8 @@
+{% for book in site.data.books %}
+    {% assign authors_all = book.Author | split: ';' %}
+    {% for author_raw in authors_all %}
+        {% assign author_firstlast = author_raw | split: ', ' %}
+        {{ author_firstlast | reverse | join: " " }}
+        {% unless forloop.last == true %} + {% endunless %} 
+    {% endfor %}
+{% endfor %}

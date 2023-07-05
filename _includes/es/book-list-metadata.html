@@ -1,0 +1,12 @@
+<a href="{% include book-list-url-page.html %}" title=""><p class="overlay-text-inside">Edición publicada en {{ book.Place }} por {{ book.Publisher }} en {{ book.Date }}</p>
+<hr class="overlay-text-inside"></a>
+<a href="{% include book-list-url-page.html %}" title="">
+    <i class="fa fa-eye see-and-download morel"></i>
+</a>
+{% if book.Download %}
+<i class="fa fa-download clear"></i>
+<a href="{{ book.Download }}">
+    <i class="fa fa-download see-and-download morel"></i>
+</a>
+{% endif %}
+

@@ -1,0 +1,8 @@
+{% assign authors_array = book.Author | split: '; ' %}
+{% assign author_array = authors_array[0] | split:', ' %}
+{% assign author = author_array[0] %}
+{% assign title_raw = book.Title | remove: "=" | remove: ":" | split: ' ' %}
+
+{% capture img-url %}
+	{{BASE_PATH}}/assets/img/{{ title_raw[0] | slugify:"latin" }}{% if title_raw[1] %}-{{ title_raw[1] | slugify:"latin" }}{% endif %}{% if title_raw[2] %}-{{ title_raw[2] | slugify:"latin" }}{% endif %}{% if title_raw[3] %}-{{ title_raw[3] | slugify:"latin" }}{% endif %}-{{ author | slugify:"latin"}}-{{ book.Date }}.jpg
+{% endcapture %}

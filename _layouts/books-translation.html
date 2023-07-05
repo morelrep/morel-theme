@@ -1,0 +1,12 @@
+---
+layout: page
+---
+ <h1 class="index">{{ page.title }}</h1>
+ <div class="row obras">
+            <!--LOOP DE LISTA 1-->
+            {% assign books = site.data.books | sort: "Date" | reverse | where: "Series", "tr" %}
+            {% for book in books %}
+            {% include book-list-base.html %}
+            {% endfor %}
+            {% include book-list-seemore.html %}
+  </div>
