@@ -1,7 +1,7 @@
   <!--lista 1 -->
         <div class="row">
             <!--LOOP DE LISTA 1-->
-            {% assign number = site.books.size %}
+            {% assign number = site.data.books.size %}
             {% assign books = site.data.books | sample: number %}
             {% assign limit = 7 %}
             {% assign counter = 0 %}
