@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "morel-theme-pack"
-  spec.version       = "0.1.21"
+  spec.version       = "0.1.22"
   spec.authors       = ["febr3s"]
   spec.email         = ["eduardofebresm@gmail.com"]
 
