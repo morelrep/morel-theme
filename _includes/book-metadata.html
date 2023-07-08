@@ -1,5 +1,5 @@
 {% for book in site.data.books %}
-{% if book.Title == page.title %}
+{% if book.Title == page.title && book.Author == page.author && book.Author.size == page.author.size %}
   {% assign authors_all = book.Author | split: '; ' %}
 
   Written by 
