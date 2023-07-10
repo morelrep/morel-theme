@@ -1,5 +1,18 @@
  {% for book in site.data.books %}
- {% if book.Title == page.title %}
+ {% assign bookAuthors = book.Author | split: ';' %}
+{% assign pageAuthors = page.author | split: ';' %}
+{% assign matchCount = 0 %}
+
+{% for author in bookAuthors %}
+  {% for pageAuthor in pageAuthors %}
+    {% if pageAuthor == author %}
+      {% assign matchCount = matchCount | plus: 1 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{%  if book.Title == page.title && if matchCount == bookAuthors.size and matchCount == pageAuthors.size %}
     {% if book.Download != "" and book.Download != nil %} 
     <a class="morel" href="{{ book.Download }}" target="_blank" download><i class="fa fa-file-pdf-o"></i></a>
     {%endif%}

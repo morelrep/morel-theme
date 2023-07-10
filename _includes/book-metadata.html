@@ -1,9 +1,6 @@
 {% for book in site.data.books %}
 {% assign bookAuthors = book.Author | split: ';' %}
 {% assign pageAuthors = page.author | split: ';' %}
-
-{% assign bookAuthors = book.Author | split: ',' %}
-{% assign pageAuthors = page.author | split: ',' %}
 {% assign matchCount = 0 %}
 
 {% for author in bookAuthors %}
