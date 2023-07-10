@@ -1,10 +1,8 @@
  {% for book in site.data.books %}
  {% assign bookAuthors = book.Author | split: ';' | uniq %}
-{% assign pageAuthors = page.author | split: ';' | uniq %}
-
-{%  if bookAuthors == pageAuthors && if book.Title == page.title %}
-  {% assign authors_all = book.Author | split: '; ' %}
-    {% if book.Download != "" and book.Download != nil %} 
+ {% assign pageAuthors = page.author | split: ';' | uniq %}
+ {%  if bookAuthors == pageAuthors && if book.Title == page.title %}
+ {% if book.Download != "" and book.Download != nil %} 
     <a class="morel" href="{{ book.Download }}" target="_blank" download><i class="fa fa-file-pdf-o"></i></a>
     {%endif%}
     {% if book.Library != "" and book.Library != nil%}
