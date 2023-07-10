@@ -1,18 +1,6 @@
 <div class="img-frame">
    {% for book in site.data.books %}
-   {% assign bookAuthors = book.Author | split: ';' %}
-   {% assign pageAuthors = page.author | split: ';' %}
-   {% assign matchCount = 0 %}
-   
-   {% for author in bookAuthors %}
-     {% for pageAuthor in pageAuthors %}
-       {% if pageAuthor == author %}
-         {% assign matchCount = matchCount | plus: 1 %}
-         {% break %}
-       {% endif %}
-     {% endfor %}
-   {% endfor %}
-   
+   {% include no-false-match.html %}
    {%  if book.Title == page.title && if matchCount == bookAuthors.size and matchCount == pageAuthors.size %}
         {% include book-list-url-img.html %}
                     <a href="{{ book.Download }}" target="_blank" download><img src="{{ img-url }}" class="responsive" alt="{{ book.Title }}"></a>

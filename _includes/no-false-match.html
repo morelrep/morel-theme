@@ -1,0 +1,14 @@
+<!--- add between the loop and the if, remember to add on the if statement "&& if matchCount == bookAuthors.size and matchCount == pageAuthors.size" -->
+{% assign bookAuthors = book.Author | split: ';' %}
+{% assign pageAuthors = page.author | split: ';' %}
+{% assign matchCount = 0 %}
+
+{% for author in bookAuthors %}
+  {% for pageAuthor in pageAuthors %}
+    {% if pageAuthor == author %}
+      {% assign matchCount = matchCount | plus: 1 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
