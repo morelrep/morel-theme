@@ -1,0 +1,11 @@
+---
+layout: page
+---
+{% assign bookAuthors = "author1" | split: ',' | uniq %}
+{% assign pageAuthors = "author1,author2" | split: ',' | uniq %}
+
+{% if bookAuthors == pageAuthors %}
+  Match found!
+{% else %}
+  No match found.
+{% endif %}

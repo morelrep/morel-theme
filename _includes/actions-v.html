@@ -1,6 +1,9 @@
  {% for book in site.data.books %}
- {% include no-false-match.html %}
- {%  if book.Title == page.title && if matchCount == bookAuthors.size and matchCount == pageAuthors.size %}
+ {% assign bookAuthors = book.Author | split: ';' | uniq %}
+{% assign pageAuthors = page.author | split: ';' | uniq %}
+
+{%  if bookAuthors == pageAuthors && if book.Title == page.title %}
+  {% assign authors_all = book.Author | split: '; ' %}
     {% if book.Download != "" and book.Download != nil %} 
     <a class="morel" href="{{ book.Download }}" target="_blank" download><i class="fa fa-file-pdf-o"></i></a>
     {%endif%}
