@@ -1,3 +1,3 @@
 ---
-title: "Seoane y Alvarez, Impresores"
+title: Seoane y Alvarez, Impresores
 ---

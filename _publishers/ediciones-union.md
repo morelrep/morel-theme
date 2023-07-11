@@ -1,3 +1,3 @@
 ---
-title: "Ediciones Unión"
+title: Ediciones Unión
 ---

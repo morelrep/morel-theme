@@ -1,3 +1,3 @@
 ---
-title: "Cubanabooks"
+title: Cubanabooks
 ---

@@ -1,3 +1,3 @@
 ---
-title: "Compañía Impresora"
+title: Compañía Impresora
 ---

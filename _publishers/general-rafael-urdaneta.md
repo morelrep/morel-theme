@@ -1,3 +1,3 @@
 ---
-title: "General Rafael Urdaneta"
+title: General Rafael Urdaneta
 ---

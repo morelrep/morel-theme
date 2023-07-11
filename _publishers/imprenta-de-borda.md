@@ -1,3 +1,3 @@
 ---
-title: "Imprenta de Borda"
+title: Imprenta de Borda
 ---

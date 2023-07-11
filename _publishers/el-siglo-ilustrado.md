@@ -1,3 +1,3 @@
 ---
-title: "El Siglo Ilustrado"
+title: El Siglo Ilustrado
 ---

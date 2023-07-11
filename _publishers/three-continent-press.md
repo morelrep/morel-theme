@@ -1,3 +1,3 @@
 ---
-title: "Three Continent Press"
+title: Three Continent Press
 ---

@@ -1,3 +1,3 @@
 ---
-title: "La Prosperidad"
+title: La Prosperidad
 ---

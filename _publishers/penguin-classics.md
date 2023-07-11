@@ -1,3 +1,3 @@
 ---
-title: "Penguin Classics"
+title: Penguin Classics
 ---

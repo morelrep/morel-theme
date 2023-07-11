@@ -1,3 +1,3 @@
 ---
-title: "Ediciones Mundo Afro"
+title: Ediciones Mundo Afro
 ---

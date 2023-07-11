@@ -1,3 +1,3 @@
 ---
-title: "Ministerio de Educación Pública"
+title: Ministerio de Educación Pública
 ---

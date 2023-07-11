@@ -1,3 +1,3 @@
 ---
-title: "Banco de la República de Colombia"
+title: Banco de la República de Colombia
 ---

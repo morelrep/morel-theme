@@ -1,0 +1,13 @@
+import sys
+sys.path.append('scripts/')
+
+import field_updates
+import replace_quotes
+import copy_img
+import copy_about [x]
+import csv_to_md_pub [x]
+import csv_to_md_auth [x]
+import csv_to_md_books [x]
+import csv_to_md_cities [x]
+import csv_to_md_repo [x]
+

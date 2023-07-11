@@ -1,3 +1,3 @@
 ---
-title: "Caribbean Diaspora Press"
+title: Caribbean Diaspora Press
 ---

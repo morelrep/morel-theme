@@ -1,3 +1,3 @@
 ---
-title: "Monte Avila Editores Latinoamericana"
+title: Monte Avila Editores Latinoamericana
 ---

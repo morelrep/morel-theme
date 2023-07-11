@@ -1,3 +1,3 @@
 ---
-title: "Afro-Hispanic Institute"
+title: Afro-Hispanic Institute
 ---

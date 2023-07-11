@@ -1,3 +1,3 @@
 ---
-title: "Ministerio de Cultura, Juventud y Deportes"
+title: Ministerio de Cultura, Juventud y Deportes
 ---

@@ -1,3 +1,3 @@
 ---
-title: "Unión de Escritores y Artistas de Cuba"
+title: Unión de Escritores y Artistas de Cuba
 ---

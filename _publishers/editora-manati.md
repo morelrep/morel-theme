@@ -1,3 +1,3 @@
 ---
-title: "Editora Manatí"
+title: Editora Manatí
 ---

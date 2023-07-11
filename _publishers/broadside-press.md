@@ -1,3 +1,3 @@
 ---
-title: "Broadside Press"
+title: Broadside Press
 ---

@@ -1,3 +1,3 @@
 ---
-title: "Imprenta nacional de Panamá"
+title: Imprenta nacional de Panamá
 ---

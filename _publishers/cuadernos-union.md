@@ -1,3 +1,3 @@
 ---
-title: "Cuadernos Unión"
+title: Cuadernos Unión
 ---

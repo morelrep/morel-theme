@@ -1,3 +1,3 @@
 ---
-title: "Sociedad Cultural Editora Indoamericana"
+title: Sociedad Cultural Editora Indoamericana
 ---

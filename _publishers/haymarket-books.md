@@ -1,3 +1,3 @@
 ---
-title: "Haymarket Books"
+title: Haymarket Books
 ---

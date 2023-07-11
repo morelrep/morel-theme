@@ -1,3 +1,3 @@
 ---
-title: "Ministerio de Educación, Departamento de Bellas Artes y Publicaciones"
+title: Ministerio de Educación, Departamento de Bellas Artes y Publicaciones
 ---
