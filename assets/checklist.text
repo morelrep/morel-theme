@@ -1,0 +1,9 @@
+field_updates [x]
+replace_quotes 
+copy_img [x]
+copy_about [x]
+csv_to_md_pub [x]
+csv_to_md_auth [x]
+csv_to_md_books [x]
+csv_to_md_cities [x]
+csv_to_md_repo [x]

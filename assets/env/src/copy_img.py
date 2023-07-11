@@ -6,7 +6,7 @@ import pandas as pd
 from slugify import slugify
 
 # Create a dataFrame from csv file
-data = pd.read_csv("_data/books.csv", sep=',', engine ='python', encoding="utf-8").fillna('')
+data = pd.read_csv("../../../_data/books.csv", sep=',', engine ='python', encoding="utf-8").fillna('')
 
 # Set the titles column to a list
 books = data.values.tolist()
@@ -40,7 +40,7 @@ for book in books:
 
 	src = str(book[37])
 
-	path = './assets/img/'
+	path = '../../../assets/img/'
 
 
 	dst = path + file_name
