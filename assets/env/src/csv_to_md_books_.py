@@ -10,16 +10,15 @@ books = data.values.tolist()
 
 # Loop through each name, create .md file, set contents to string
 for book in books:
-	# creating the title, uniq id, and author variables
+	# converting the Authors column to an array
 	author_raw = book[3]
 	title_raw = book[4]
-	unique_id = book[0]
-	# creating the different components of the url for the main author
+	# the next lines create the different components of the url for the main author
 	authors_array = author_raw.split("; ")
 	author_array = authors_array[0].split(", ")
-	# creating the different components of the url for the main author
+	# the next lines create the different components of the url for the main author
 	author = author_array[0]
-	# creating the different components of the url for the title
+	# the next lines create the different components of the url for the title
 	title_raw = str(book[4]) 
 	title_split = title_raw.split(" ")
 	title_short = (title_split[:4])
@@ -38,6 +37,6 @@ for book in books:
 
 
 	with open(file_name, 'w', encoding="utf-8") as f:
-		f.write(f'---\ntitle: "{title_raw}"\nid: "{unique_id}"\nauthor: {author_raw}\n---\n{xcrpt}')
+		f.write(f'---\ntitle: "{title_raw}"\nauthor: {author_raw}\n---\n{xcrpt}')
 		f.close()
 	print(f'{file_name} saved')

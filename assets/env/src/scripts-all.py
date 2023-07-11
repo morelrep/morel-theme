@@ -1,5 +1,5 @@
-import sys
-sys.path.append('scripts/')
+# import sys
+# sys.path.append('scripts/')
 
 import field_updates
 import replace_quotes
