@@ -1,3 +1,3 @@
 ---
-title: "Editorial Costa Rica"
+title: Editorial Costa Rica
 ---

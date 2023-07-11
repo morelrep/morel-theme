@@ -1,3 +1,3 @@
 ---
-title: "Page Publishing"
+title: Page Publishing
 ---

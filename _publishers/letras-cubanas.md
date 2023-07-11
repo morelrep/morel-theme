@@ -1,3 +1,3 @@
 ---
-title: "Letras Cubanas"
+title: Letras Cubanas
 ---

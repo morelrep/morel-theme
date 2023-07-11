@@ -1,3 +1,3 @@
 ---
-title: "Imp. de Álvarez y ca"
+title: Imp. de Álvarez y ca
 ---

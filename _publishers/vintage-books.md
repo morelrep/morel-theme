@@ -1,3 +1,3 @@
 ---
-title: "Vintage Books"
+title: Vintage Books
 ---

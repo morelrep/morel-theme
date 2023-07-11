@@ -1,3 +1,3 @@
 ---
-title: "Fin de Siglo"
+title: Fin de Siglo
 ---

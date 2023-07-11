@@ -1,3 +1,3 @@
 ---
-title: "Salvat"
+title: Salvat
 ---

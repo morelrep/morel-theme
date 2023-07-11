@@ -1,3 +1,3 @@
 ---
-title: "H. Garnier"
+title: H. Garnier
 ---

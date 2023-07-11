@@ -1,3 +1,3 @@
 ---
-title: "Imp. de Buenos Aires"
+title: Imp. de Buenos Aires
 ---

@@ -1,3 +1,3 @@
 ---
-title: "Copidart"
+title: Copidart
 ---

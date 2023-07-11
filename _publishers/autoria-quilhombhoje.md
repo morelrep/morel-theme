@@ -1,3 +1,3 @@
 ---
-title: "Autoria Quilhombhoje"
+title: Autoria Quilhombhoje
 ---

@@ -1,3 +1,3 @@
 ---
-title: "Casa de la Cultura Ecuatoriana"
+title: Casa de la Cultura Ecuatoriana
 ---

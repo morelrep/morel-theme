@@ -1,3 +1,3 @@
 ---
-title: "Instituto Cubano del Libro"
+title: Instituto Cubano del Libro
 ---

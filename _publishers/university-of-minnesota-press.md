@@ -1,3 +1,3 @@
 ---
-title: "University of Minnesota Press"
+title: University of Minnesota Press
 ---

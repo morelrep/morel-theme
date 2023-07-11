@@ -1,3 +1,3 @@
 ---
-title: "Rumbo Editorial"
+title: Rumbo Editorial
 ---

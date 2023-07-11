@@ -1,3 +1,3 @@
 ---
-title: "Ed. Mejoras"
+title: Ed. Mejoras
 ---

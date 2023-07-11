@@ -1,3 +1,3 @@
 ---
-title: "Guadarrama"
+title: Guadarrama
 ---

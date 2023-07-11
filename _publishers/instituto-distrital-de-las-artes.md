@@ -1,3 +1,3 @@
 ---
-title: "Instituto Distrital de las Artes"
+title: Instituto Distrital de las Artes
 ---

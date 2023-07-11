@@ -1,3 +1,3 @@
 ---
-title: "Mondadori"
+title: Mondadori
 ---

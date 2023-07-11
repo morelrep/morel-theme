@@ -1,3 +1,3 @@
 ---
-title: "Libresa"
+title: Libresa
 ---

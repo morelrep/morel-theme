@@ -1,3 +1,3 @@
 ---
-title: "Cuadernos de Arte Popular"
+title: Cuadernos de Arte Popular
 ---

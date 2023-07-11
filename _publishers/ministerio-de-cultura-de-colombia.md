@@ -1,3 +1,3 @@
 ---
-title: "Ministerio de Cultura de Colombia"
+title: Ministerio de Cultura de Colombia
 ---

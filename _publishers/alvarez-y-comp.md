@@ -1,3 +1,3 @@
 ---
-title: "Alvarez y comp."
+title: Alvarez y comp.
 ---

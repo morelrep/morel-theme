@@ -1,3 +1,3 @@
 ---
-title: "Imprenta Buenos Aires"
+title: Imprenta Buenos Aires
 ---

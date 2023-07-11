@@ -1,3 +1,3 @@
 ---
-title: "Mazza"
+title: Mazza
 ---

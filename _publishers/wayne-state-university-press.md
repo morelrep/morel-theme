@@ -1,3 +1,3 @@
 ---
-title: "Wayne State University Press"
+title: Wayne State University Press
 ---

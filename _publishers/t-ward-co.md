@@ -1,3 +1,3 @@
 ---
-title: "T. Ward & Co."
+title: T. Ward & Co.
 ---

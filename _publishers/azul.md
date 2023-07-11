@@ -1,3 +1,3 @@
 ---
-title: "Azul"
+title: Azul
 ---

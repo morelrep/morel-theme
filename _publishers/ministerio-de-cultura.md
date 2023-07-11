@@ -1,3 +1,3 @@
 ---
-title: "Ministerio de Cultura"
+title: Ministerio de Cultura
 ---

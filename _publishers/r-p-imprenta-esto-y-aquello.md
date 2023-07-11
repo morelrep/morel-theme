@@ -1,3 +1,3 @@
 ---
-title: "R.P. Imprenta  «Esto y aquello»"
+title: R.P. Imprenta  «Esto y aquello»
 ---

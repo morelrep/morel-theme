@@ -1,3 +1,3 @@
 ---
-title: "University of Texas Press"
+title: University of Texas Press
 ---

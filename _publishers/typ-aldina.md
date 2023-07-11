@@ -1,3 +1,3 @@
 ---
-title: "Typ. Aldina"
+title: Typ. Aldina
 ---

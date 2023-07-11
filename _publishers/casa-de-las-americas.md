@@ -1,3 +1,3 @@
 ---
-title: "Casa de las Américas"
+title: Casa de las Américas
 ---
