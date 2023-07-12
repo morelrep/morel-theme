@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "morel-theme-pack"
-  spec.version       = "0.1.3"
+  spec.version       = "0.1.321"
   spec.authors       = ["febr3s"]
   spec.email         = ["eduardofebresm@gmail.com"]
 
@@ -10,7 +10,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "http://morel.la."
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
+  spec.files = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets/(?!env/)|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)}) }
+
+
 
   spec.add_runtime_dependency "jekyll", "~> 4.3"
 end
