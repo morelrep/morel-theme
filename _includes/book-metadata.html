@@ -1,20 +1,6 @@
 {% for book in site.data.books %}
-{% assign bookAuthors = book.Author | split: ';' %}
-{% assign pageAuthors = page.author | split: ';' %}
-{% assign matchCount = 0 %}
-
-{% for author in bookAuthors %}
-  {% for pageAuthor in pageAuthors %}
-    {% if pageAuthor == author %}
-      {% assign matchCount = matchCount | plus: 1 %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{%  if book.Title == page.title && if matchCount == bookAuthors.size and matchCount == pageAuthors.size %}
-  {% assign authors_all = book.Author | split: '; ' %}
-
+{%  if book.Id == page.key %}
+{% assign authors_all = book.Author | split: '; ' %}
   Written by 
   {% for author_raw in authors_all | limit: 3 %}
       {% assign author_firstlast = author_raw | split: ', ' %}

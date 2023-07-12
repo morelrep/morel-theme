@@ -1,0 +1,10 @@
+---
+layout: page
+---
+{% for book in site.data.books %}
+  {% if book.Id %}
+    <p>Id: {{ book.Id }}</p>
+  {% else %}
+    <p>Id not found.</p>
+  {% endif %}
+{% endfor %}
