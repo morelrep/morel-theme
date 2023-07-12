@@ -1,5 +1,5 @@
 {% for metadata in site.data.books %}
-{% if metadata.Title == book.Title && metadata.Author == book.Author && book.Author.size == page.author.size %}
+{% if metadata.Id == book.Id %}
   {% assign authors_all = metadata.Author | split: '; ' %}
 
   Written by 

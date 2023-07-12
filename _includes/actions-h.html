@@ -1,7 +1,6 @@
 <div class="img-frame">
    {% for book in site.data.books %}
-   {% include no-false-match.html %}
-   {%  if book.Title == page.title && if matchCount == bookAuthors.size and matchCount == pageAuthors.size %}
+   {%  if book.Id == page.key %}
         {% include book-list-url-img.html %}
                     <a href="{{ book.Download }}" target="_blank" download><img src="{{ img-url }}" class="responsive" alt="{{ book.Title }}"></a>
                     <div class="actions-h">

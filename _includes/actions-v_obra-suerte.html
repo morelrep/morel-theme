@@ -1,6 +1,5 @@
  {% for link in site.data.books %}
- {% include no-false-match.html %}
- {% if link.Title == book.Title && if matchCount == bookAuthors.size and matchCount == pageAuthors.size %}
+ {% if link.Id == book.Id %}
     {% if link.Download != "" and link.Download != nil %} 
     <a class="morel" href="{{ link.Download }}" target="_blank" download><i class="fa fa-file-pdf-o"></i></a>
     {%endif%}
