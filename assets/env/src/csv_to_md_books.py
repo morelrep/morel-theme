@@ -38,6 +38,6 @@ for book in books:
 
 
 	with open(file_name, 'w', encoding="utf-8") as f:
-		f.write(f'---\ntitle: "{title_raw}"\nid: "{unique_id}"\nauthor: {author_raw}\n---\n{xcrpt}')
+		f.write(f'---\ntitle: "{title_raw}"\nkey: "{unique_id}"\nauthor: {author_raw}\n---\n{xcrpt}')
 		f.close()
 	print(f'{file_name} saved')
