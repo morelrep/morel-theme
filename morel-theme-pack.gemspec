@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "morel-theme-pack"
-  spec.version       = "0.1.327"
+  spec.name          = "morel-theme"
+  spec.version       = "0.2.0"
   spec.authors       = ["febr3s"]
   spec.email         = ["eduardofebresm@gmail.com"]
 
