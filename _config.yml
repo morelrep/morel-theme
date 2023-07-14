@@ -1,6 +1,5 @@
 title: MOREL # Write here the name of your site
 tagline: Mobile Open Resilient Electronic Libraries # Write here the description of your site
-description: is a resource for readers, writers, publishers, students and teachers interested in Afro-American and Latin American culture in general, and Afro-Latin American culture in particular. It gathers book covers, excerpts, bibliographic clues and digital downloads of works by black Latin American authors in original language and in translation.
 img: logo.png # Substitute the file with a copy of your site's logo on /assets/img/tema
 background: trama.png # Substitute the file with a copy of your site's pattern on /assets/img/tema
 image : avatar.png
@@ -8,7 +7,7 @@ email : proyectomorel@gmail.com
 github : 
 twitter : 
 instagram:
-# theme: morel-theme-pack
+# theme: morel-theme
 
 template : 
   name : MOREL
