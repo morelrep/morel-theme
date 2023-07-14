@@ -10,7 +10,7 @@ def zip_directory(directory, zip_path):
                 zipf.write(file_path, rel_path)
 
 directory_to_compress = '/run/media/febres/TOSHIBA EXT/Dev/MOREL 2.1/morel-theme/assets/env'
-zip_path = '/run/media/febres/TOSHIBA EXT/Dev/MOREL 2.1/morel-theme/assets/python-env.zip'
+zip_path = '/run/media/febres/TOSHIBA EXT/Dev/MOREL 2.1/morel-theme/assets/source/assets/python-env.zip'
 
 zip_directory(directory_to_compress, zip_path)
 print(f'Contents of {directory_to_compress} compressed to {zip_path}.')
