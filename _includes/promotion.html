@@ -6,9 +6,11 @@
                     </h2>
                 </div>
                 <div class="ficha-extract" style="">
-                    {% for about in site.abouts | where: "title", "description" %}
-                    {% if about.lang == "en" %}
+                    {% for about in site.abouts %}
+                    {% if about.title == "description" %}
+                    {% if about.lang == "en" %%}
                     {{ about.excerpt }}
+                    {% endif %}
                     {% endif %}
                     {% endfor %}
                     {% include ver-mas-prom.html %}

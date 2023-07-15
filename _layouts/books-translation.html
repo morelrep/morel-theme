@@ -8,5 +8,6 @@ layout: page
             {% for book in books %}
             {% include book-list-base.html %}
             {% endfor %}
+            {% assign target = "books" %}
             {% include book-list-seemore.html %}
   </div>

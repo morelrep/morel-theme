@@ -1,4 +1,4 @@
 ---
 layout: books-no-download
-title: books to browse (no download available)
+title: books to browse
 ---

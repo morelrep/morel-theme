@@ -22,9 +22,11 @@ a {
   color: var(--color-1);
 }
 
+/* aquí viene el estilo de link para párrafo y para lista*/
+
 .blog-post a,
 a.morel,
-footer a {
+footer a, p a, ul a {
   color: var(--color-1);
   font-weight: 500;
   transition: all 1s ease;
@@ -36,6 +38,7 @@ footer a {
   transition: all 1s ease;
 }
 
+
 a.metadata-input,
 footer a {
   color: var(--color-1);
@@ -45,7 +48,7 @@ footer a {
 
 a.morel:hover,
 a.metadata-input:hover,
-footer a:hover {
+footer a:hover, p a:hover, ul a:hover {
   color: var(--color-2);
   cursor: pointer;
 }
@@ -152,4 +155,11 @@ h1.index {
   
   .overlay {
     background-color: rgba(0, 0, 0, 0.88);
+  }
+
+  ol, ul {
+    list-style: inside; 
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
   }
