@@ -5,7 +5,7 @@
             {% for book in books %}
              <div class="basis">
                 <div class="container">
-                    <img src="{{ BASE_PATH }}/assets/img/{{ book.img }}" alt="{{ book.title }}" class="image sombra">
+                    <img src="{{ site.BASE_PATH }}/assets/img/{{ book.img }}" alt="{{ book.title }}" class="image sombra">
                     <div class="overlay">
                         <div class="text">
                             {% include book-list-metadata.html %}
@@ -22,7 +22,7 @@
             <!-- MÁS OBRAS -->
             <div class="basis masobras">
                 <div class="container">
-                    <label for="listas"><img src="{{ BASE_PATH }}/assets/img/tema/+obras.png" class="image sombra"></label>
+                    <label for="listas"><img src="{{ site.BASE_PATH }}/assets/img/tema/+obras.png" class="image sombra"></label>
                     <div>
                         <a href="books"><div class="text"><label class="button" for="lista-obras">+&nbsp;OBRAS</label></div></a>
                     </div>

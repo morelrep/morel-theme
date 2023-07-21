@@ -4,9 +4,9 @@
             {% for chriteria in site.data.chriterias %}
              <div class="basis">
                 <div class="container">
-                    <a href="{{ BASE_PATH }}/chriteria/{{ chriteria.filename }}"><img src="{{ BASE_PATH }}/assets/img/{{ chriteria.img }}" alt="{{ chriteria.title }}" class="image sombra chriteria">
+                    <a href="{{ site.BASE_PATH }}/chriteria/{{ chriteria.filename }}"><img src="{{ site.BASE_PATH }}/assets/img/{{ chriteria.img }}" alt="{{ chriteria.title }}" class="image sombra chriteria">
                     <div></a>
-                        <a href="{{ BASE_PATH }}/chriteria/{{ chriteria.filename }}"><div class="text">
+                        <a href="{{ site.BASE_PATH }}/chriteria/{{ chriteria.filename }}"><div class="text">
                                                     <p class="overlay-text-inside">{{ chriteria.title }}</p>
                                                     <hr class=".overlay-text-inside">
                                                         <i class="fa fa-eye see-and-download morel"></i>

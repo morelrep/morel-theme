@@ -8,7 +8,7 @@
             {% if book.author == page.author %}
              <div class="basis">
                 <div class="container">
-                    <a href="{{ BASE_PATH }}{{ book.url }}"><img src="{{ BASE_PATH }}/img/{{ book.img }}" alt="{{ book.title }}" class="image sombra"></a>
+                    <a href="{{ site.BASE_PATH }}{{ book.url }}"><img src="{{ site.BASE_PATH }}/img/{{ book.img }}" alt="{{ book.title }}" class="image sombra"></a>
                     <div class="overlay">
                         <div class="text">
                             {% include book-list-metadata.html %}
@@ -22,7 +22,7 @@
             </div>
             {% elsif book.author2 == page.author %}
             <div class="container">
-                    <a href="{{ BASE_PATH }}{{ book.url }}"><img src="{{ BASE_PATH }}/img/{{ book.img }}" alt="{{ book.title }}" class="image sombra"></a>
+                    <a href="{{ site.BASE_PATH }}{{ book.url }}"><img src="{{ site.BASE_PATH }}/img/{{ book.img }}" alt="{{ book.title }}" class="image sombra"></a>
                     <div class="overlay">
                         <div class="text">
                             {% include book-list-metadata.html %}

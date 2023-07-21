@@ -13,7 +13,7 @@
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<p>Aún esa obra o esa autora no están disponibles. <a href="{{BASE_PATH}}/agregar">Sugiere su incorporación</a><p>';
+      searchResults.innerHTML = '<p>Aún esa obra o esa autora no están disponibles. <a href="{{site.BASE_PATH}}/agregar">Sugiere su incorporación</a><p>';
     }
   }
 
