@@ -4,7 +4,7 @@ title: Thank you for your interest in getting involved
 img: agregar.jpg
 ---
  
-Here you can [add content](https://form.jotform.com/211904785426056) to help us build this archive.
+Here you can [add content]({{site.jotform}}) to help us build this archive.
 
 You can make sure that the content you are going to propose is not already available in {{ site.title }} in the [search page]({{ site.BASE_PATH}}/search.html) or the complete listings of:
   - [books]({{ site.BASE_PATH }}/books)
@@ -13,4 +13,4 @@ You can make sure that the content you are going to propose is not already avail
   - [imprints or publishers]({{site.BASE_PATH}}/criteria/publisher)
   - [nationalities of authors]({{site.BASE_PATH}}/criteria/nationality)
   - [edition dates]({{site.BASE_PATH}}/criteria/edition)
-  - [digital repositories]({{site.BASE_PATH}}/criteria/repository).
+  - [digital repositories]({{site.BASE_PATH}}/criteria/repository)
