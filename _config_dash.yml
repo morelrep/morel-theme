@@ -1,0 +1,43 @@
+prSections:
+  - title: My Pull Requests
+    filters: is:open author:@me
+    layout:
+      author:
+        hidden: true
+  - title: Needs My Review
+    filters: is:open review-requested:@me
+  - title: Subscribed
+    filters: is:open -author:@me repo:cli/cli repo:dlvhdr/gh-dash
+    limit: 50 # optional limit of rows fetched for this section
+
+issuesSections:
+  - title: Created
+    filters: is:open author:@me
+  - title: Assigned
+    filters: is:open assignee:@me
+  - title: Subscribed
+    filters: is:open -author:@me repo:microsoft/vscode repo:dlvhdr/gh-dash
+
+defaults:
+  layout:
+    prs:
+      repo:
+        grow: true
+        width: 10
+        hidden: false
+  prsLimit: 20 # global limit
+  issuesLimit: 20 # global limit
+  preview:
+    open: true # whether to have the preview pane open by default
+    width: 60 # width in columns
+  refetchIntervalMinutes: 30 # will re-fetch all sections every 30 minutes
+
+repoPaths:
+  :owner/:repo: ~/src/github.com/:owner/:repo
+  dlvhdr/*: ~/code/repos/dlvhdr/*
+  dlvhdr/gh-dash: ~/code/gh-dash
+
+keybindings: # optional, define custom keybindings - see more info below
+pager:
+  diff: less # or delta for example
+confirmQuit: false # show prompt on quit or not
