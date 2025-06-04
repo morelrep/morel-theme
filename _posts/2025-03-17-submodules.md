@@ -1,7 +1,3 @@
-Got it! Let’s go step by step with explicit examples, making it crystal clear when we’re working in the **main repository** and when we’re dealing with the **submodule**.
-
----
-
 ## **Step 1: Create a Main Repository**
 First, let’s set up a **main repository** where we will add a submodule.
 
@@ -130,6 +126,7 @@ Now, the submodule is completely gone from the **main repository**.
 ---
 
 ### **Final Summary**
+
 | Action | Command | Where? |
 |---------|---------|---------|
 | Initialize a main repository | `git init` | In `main-repo` |
@@ -139,5 +136,3 @@ Now, the submodule is completely gone from the **main repository**.
 | Initialize submodules after cloning | `git submodule update --init --recursive` | In `main-repo` |
 | Update a submodule | `git submodule update --remote --merge` | In `main-repo` |
 | Remove a submodule | `git submodule deinit -f <path>` + `rm -rf <path>` | In `main-repo` |
-
-Would you like me to explain anything in more detail?
