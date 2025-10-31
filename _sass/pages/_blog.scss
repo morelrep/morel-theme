@@ -4,7 +4,7 @@
   flex-basis: calc(100% - 0.001rem);
   max-width: calc(100% - 0.001rem);
   align-self: center;
-  margin-top: calc(3.5rem - 1%);
+  margin-top: calc(4.5rem - 1%);
 }
 
 .workarround {
@@ -107,6 +107,7 @@
     min-height: auto;
     position: fixed;
     top: 36%;
+    margin-top: calc(-4.5rem - 1%);
   }
 
   .workarround {
